@@ -2,69 +2,194 @@
 <html lang="uk">
 <head>
   <meta charset="UTF-8">
-  <title>Персональний тренер</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Персональний фітнес тренер</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: #e5e7eb;
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 60px 20px;
+      background: linear-gradient(135deg, #22c55e, #16a34a);
+      color: #052e16;
+    }
+
+    .hero {
+      max-width: 1100px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .hero img {
+      width: 100%;
+      border-radius: 20px;
+    }
+
+    h1 {
+      font-size: 42px;
+      margin-bottom: 15px;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #22c55e;
+      margin-bottom: 20px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #020617;
+      padding: 25px;
+      border-radius: 14px;
+    }
+
+    .price {
+      font-size: 26px;
+      color: #22c55e;
+      margin-top: 10px;
+    }
+
+    .cta {
+      background: #020617;
+      border-radius: 20px;
+      padding: 40px;
+      text-align: center;
+    }
+
+    form {
+      max-width: 400px;
+      margin: 30px auto 0;
+      display: grid;
+      gap: 15px;
+    }
+
+    input, button {
+      padding: 14px;
+      border-radius: 8px;
+      border: none;
+      font-size: 16px;
+    }
+
+    input {
+      background: #0f172a;
+      color: #fff;
+      border: 1px solid #334155;
+    }
+
+    button {
+      background: #22c55e;
+      color: #052e16;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      color: #64748b;
+    }
+
+    @media (max-width: 800px) {
+      .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+    }
+  </style>
 </head>
 <body>
 
-<header class="hero">
-  <h1>Персональний фітнес-тренер</h1>
-  <p>Твоє тіло — твій результат вже за 30 днів</p>
-  <a href="#contact" class="btn">Записатись на тренування</a>
+<header>
+  <div class="hero">
+    <div>
+      <h1>Персональний фітнес тренер</h1>
+      <p>
+        Допомагаю схуднути, набрати м’язи та привести тіло у форму  
+        без жорстких дієт і вигорання
+      </p>
+    </div>
+    <img src="img/trainer.jpg" alt="Фітнес тренер">
+  </div>
 </header>
 
-<section class="about">
-  <h2>Хто я</h2>
-  <p>
-    Я сертифікований персональний тренер з досвідом роботи.
-    Допомагаю клієнтам схуднути, набрати форму та покращити самопочуття.
-  </p>
-</section>
-
-<section class="gallery">
-  <h2>Тренування</h2>
-  <div class="images">
-    <img src="https://images.unsplash.com/photo-1554284126-aa88f22d8b74" alt="Тренування">
-    <img src="https://images.unsplash.com/photo-1599058917212-d750089bc07c" alt="Фітнес зал">
-    <img src="https://images.unsplash.com/photo-1558611848-73f7eb4001a1" alt="Силове тренування">
+<section>
+  <h2>Для кого мої тренування</h2>
+  <div class="cards">
+    <div class="card">Хочеш схуднути без стресу</div>
+    <div class="card">Хочеш набрати м’язову масу</div>
+    <div class="card">Потрібна дисципліна та контроль</div>
   </div>
 </section>
 
-<section class="programs">
-  <h2>Програми</h2>
+<section>
+  <h2>Послуги</h2>
   <div class="cards">
     <div class="card">
-      <h3>🔥 Схуднення</h3>
-      <p>Спалювання жиру та корекція фігури</p>
+      <h3>Онлайн супровід</h3>
+      <p>Тренування + харчування + щотижневий контроль</p>
     </div>
     <div class="card">
-      <h3>💪 Набір маси</h3>
-      <p>Силові тренування + харчування</p>
+      <h3>Персональні тренування</h3>
+      <p>Офлайн або онлайн, індивідуальний підхід</p>
     </div>
     <div class="card">
-      <h3>🧘 Функціональний тренінг</h3>
-      <p>Гнучкість, витривалість, здоров’я</p>
+      <h3>Програма тренувань</h3>
+      <p>Готовий план під твою ціль</p>
     </div>
   </div>
 </section>
 
-<section class="benefits">
-  <h2>Чому обирають мене</h2>
-  <ul>
-    <li>✅ Індивідуальний підхід</li>
-    <li>✅ Видимий результат</li>
-    <li>✅ Онлайн та офлайн формати</li>
-  </ul>
+<section>
+  <h2>Ціни</h2>
+  <div class="cards">
+    <div class="card">
+      Онлайн супровід (місяць)
+      <div class="price">$80</div>
+    </div>
+    <div class="card">
+      Персональне тренування
+      <div class="price">$15</div>
+    </div>
+    <div class="card">
+      Програма тренувань
+      <div class="price">$40</div>
+    </div>
+  </div>
 </section>
 
-<section id="contact" class="contact">
-  <h2>Запис на тренування</h2>
-  <p>📩 Instagram: @trainer</p>
-  <p>📞 Телефон: +38 099 000 00 00</p>
+<section class="cta">
+  <h2>Запис на безкоштовну консультацію</h2>
+  <p>Залиш заявку — я напишу тобі та підберу формат</p>
+
+  <!-- ЛІД-ФОРМА -->
+  <form>
+    <input type="text" placeholder="Ваше імʼя" required>
+    <input type="tel" placeholder="Телефон або Instagram" required>
+    <button type="submit">Записатися</button>
+  </form>
 </section>
 
 <footer>
-  <p>© 2026 Fitness Coach</p>
+  © 2026 Персональний фітнес тренер
 </footer>
 
 </body>
